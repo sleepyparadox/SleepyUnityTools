@@ -34,7 +34,7 @@ using UnityEditor;
 
 public class AssetGeneratorMenuItem
 {
-    [MenuItem("UnityTools/Generate Assets.cs")]
+    [MenuItem("SleepyParadox/Generate Assets.cs")]
     static void GenerateAssetsCodeFile()
     {
         Sleepy.UnityTools.AssetGenerator.GenerateAssetCodeFile("Assets", "Assets/Assets.cs", "Assets");

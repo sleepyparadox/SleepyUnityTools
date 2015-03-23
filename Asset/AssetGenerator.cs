@@ -70,7 +70,7 @@ namespace Sleepy.UnityTools
                     {".PNG", typeof(Texture2dAsset).Name},
                     {".wav", typeof(AudioClipAsset).Name},
                 };
-                writer.WriteLine("using UnityTools_4_6;");
+                writer.WriteLine("using Sleepy.UnityTools;");
                 HandleDirectory(resourcesDir, writer, ref tab, resourcesPath, extensions, outputClassName);
                 writer.Close();
             }
