@@ -1,4 +1,4 @@
-﻿///
+///
 /// The latest version of SleepyUnityTools can be found at 
 /// https://github.com/sleepyparadox/SleepyUnityTools
 ///
@@ -24,29 +24,3 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 /// SOFTWARE.
 ///
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
-
-namespace Sleepy.UnityTools
-{
-    public class Texture2dAsset : Asset
-    {
-        public Texture2dAsset(string path)
-            : base(path)
-        {
-
-        }
-
-        public Texture2D Texture
-        {
-            get
-            {
-                return (Texture2D)GetObject(typeof(Texture2D));
-            }
-        }
-    }
-}
